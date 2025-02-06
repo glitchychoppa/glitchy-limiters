@@ -199,7 +199,7 @@ QBCore.Functions.CreateCallback('glitchy-limiters:server:checkLimit', function(s
 end)
 
 -- Limit bilgisi sorgulama
-QBCore.Functions.CreateCallback("glitchy-limitersserver:getLimit", function(source, cb, jobName)
+QBCore.Functions.CreateCallback("glitchy-limiters:server:getLimit", function(source, cb, jobName)
     local Player = QBCore.Functions.GetPlayer(source)
     if not Player then
         print("[Limiters] Hata: Oyuncu bulunamadı. Source:", source)
@@ -232,7 +232,7 @@ QBCore.Functions.CreateCallback('glitchy-limiters:server:updsetateEarnedMoney', 
 end)
 
 -- Limit sıfırlama
-QBCore.Functions.CreateCallback("glitchy-limitersserver:resetLimit", function(source, cb, jobName)
+QBCore.Functions.CreateCallback("glitchy-limiters:server:resetLimit", function(source, cb, jobName)
     local Player = QBCore.Functions.GetPlayer(source)
     if not Player then
         print("[Limiters] Hata: Oyuncu bulunamadı. Source:", source)
